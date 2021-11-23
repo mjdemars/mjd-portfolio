@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="blobbuttons.css">
+    <link rel="stylesheet" href="wave.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="slideshow.js"></script>
+    <script src="gotoBottom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="content2">
+    <h1 style="color:rgb(255, 255, 255)">Maddalen DeMars</h1>
+
+    <div class="typewriter">
+      <p class="typewriter" style="color:#000000">Welcome! Here you can find all of my works and involvements.</p>
+    </div>
+
+    <div class="buttons">
+      <a href="personal.html"><button class="blob-btn">
+        Personal
+        <span class="blob-btn__inner">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+          </span>
+        </span>
+      </button>
+
+      <a href="professional.html"><button class="blob-btn">
+        Professional
+        <span class="blob-btn__inner">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+          </span>
+        </span>
+      </button></a>
+
+      <a href="#aboutme"><button class="blob-btn">
+        About Me
+        <span class="blob-btn__inner">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+          </span>
+        </span>
+      </button></a>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+          <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+
+  </div>
+
+  <section>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </section>
+
+  <div id="aboutme" style="background-color: white;">
+    <div class="row">
+      <table>
+        <tr>
+          <td><img src="pics/mememe2.jpg" alt="Portrait" width="350px" height="350px" style="border-radius: 50%; padding-top: 2em; padding-bottom: 2em; padding-left: 2em; padding-right: 2em;"></td>
+          <td><p style="line-height: 25px; padding-left: 3em; padding-right: 3em; padding-top: 3em; padding-bottom: 5em; text-align: left;">
+            I am currently a student at Georgia Institute of Technology pursuing my undergraduate 
+            degree in Computational Media with concentrations in People and Interaction Design. 
+            Computational Media is a Tech-specific major, which is best described as Computer Science 
+            with a heavy focus on design. I plan to pursue UI/UX design and web development in the 
+            future with my major.
+            <br>
+            Email: maddalendemars@gmail.com
+            <br>
+            <a href="https://www.linkedin.com/in/maddalen-demars-35645692/">LinkedIn</a>
+        </p></td>
+        </tr>
+      </table>
+    </div>
+  </div>   
+
+    <div class="topnav">
+      <a href="personal.html">Personal</a>
+      <a href="professional.html">Professional</a>
+      <a href="#content">About Me</a>
+    </div>
+
+</body>
+</html>
