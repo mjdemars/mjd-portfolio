@@ -16,14 +16,14 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #cccbb3;
+  background-color: #000000;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #db7986;
+  background-color: #db9eaa;
 }
 
 /* Fading animation */
