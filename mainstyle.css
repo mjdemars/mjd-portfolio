@@ -50,6 +50,7 @@ td {
 
 .row {
   display: flex;
+  padding-bottom: 2em;
 }
 
 /* old color hex: #db7986 */
@@ -136,19 +137,23 @@ html, body {
 }
 
 body {
-    background: linear-gradient(-45deg, #db9eaa, #f0bfc9, #95b6d4, #bdcbf1);
-    background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
+  background: linear-gradient(-45deg, #db9eaa, #f0bfc9, #95b6d4, #bdcbf1);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.body-projects {
+  background-image: url("pics/pink-sky.jpg");
 }
