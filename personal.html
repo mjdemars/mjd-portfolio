@@ -14,6 +14,10 @@
     
     <style>
         img {object-fit: scale-down; height: 500px;}
+        body {
+            background: linear-gradient(-45deg, #ffffff, #f7e8f2, #e4c5ce, #c3d2ff);
+            background-size: 400% 400%;
+        }
     </style>
 </head>
 
@@ -27,12 +31,12 @@
         <a href="index.html#aboutme">About Me</a>
     </div>
 
-    <div id="content" style="background-color: white;">
+    <div id="content">
         <h1 class="typewriter_header" style="color: rgb(0, 0, 0);">Artwork</h1>
 
-        <div class="row">
-            <div class="column">
-                <h2>Digital Art</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2 style="text-align: center;">Digital Art</h2>
                 <!-- Slideshow container -->
                 <div class="w3-content w3-display-container" style="padding-bottom: 1em;">
                     <img class="mySlides" src="pics/digital/xielian.jpg" alt="xielian" style="width:100%;">                
@@ -67,8 +71,8 @@
             </div>
             <script src="slideshow.js"></script>
 
-            <div class="column" style="padding-bottom: 7em;">
-                <h2>Traditional Art</h2>
+            <div class="grid-item">
+                <h2 style="text-align: center;">Traditional Art</h2>
                 <!-- Slideshow container -->
                 <div class="w3-content w3-display-container" style="padding-bottom: 1em;">
                     <img class="mySlides2" src="pics/traditional/howls.jpg" alt="howls" style="width:100%;">                
