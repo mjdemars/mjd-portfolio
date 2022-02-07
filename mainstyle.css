@@ -24,6 +24,16 @@ h2 {
   margin-top: 1em;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  font-size: 1em;
+  text-align: left;
+}
+
 table {
   border: 2px solid white;
   border-collapse: collapse;
