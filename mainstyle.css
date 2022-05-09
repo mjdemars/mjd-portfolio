@@ -28,6 +28,7 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
+  padding-bottom: 2em;
 }
 
 .grid-item {
