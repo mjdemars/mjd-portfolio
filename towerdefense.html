@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Cat's Revenge</title>
+
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        table, td {border: 2px solid #ffffff; font-size: 1.1em;}
+        img {object-fit: scale-down; width:100%; height: 400px;}
+        p {padding-left: 4.5em; padding-right: 4.5em; line-height: 25px; text-align: left;}
+    </style>
+</head>
+
+<body>
+<div class="topnav">
+    <a style="font-family:Satisfy" style="color:white" href="index.html">Maddalen DeMars</a>
+    <a href="personal.html">Resume</a>
+    <div class="dropdown">
+        <a href="projects.html">Projects</a>
+        <div class="dropdown-content">
+            <a href="infinityward.html">Modern Warfare II</a>
+            <a href="mgba.html">Foxtrot</a>
+            <a href="technique.html">Technique</a>
+            <a class="active" href="#home">The Cat's Revenge</a>
+            <a href="platformer.html">A Dash of Thyme</a>
+        </div>
+    </div> 
+    <a href="index.html#aboutme">About Me</a>
+</div>
+<div id="content" style="background-color: white;">
+
+    <h1 class="typewriter_header" style="color: rgb(0, 0, 0); padding-bottom: 0.5em;">The Cat's Revenge</h1>
+    <p>
+        For my class Objects and Design, we were tasked with building a tower defense game 
+        from scratch in teams of 4-5 throughout the whole semester. For this project, I was given 
+        the roles: designer and project manager. 
+        All of our art assets were made by myself using Medibang and Photoshop. I hand drew most of the 
+        art assets used and also made short GIFs in Photoshop for our start game screen and end screens.
+        I would also implement code on the front-end side to make our game more visually appealing and add all of the text.
+        To consider the audio portion of our game, I also composed and recorded all of the music for each game state.  
+        In addition to this, I also assumed the role of project manager, making sure that all of the team members 
+        were contributing to our final product, and making sure we were on time with all of our deadlines. 
+        <br>
+        Unfortunately, I am unable to share our game code since it is stored in a private repository, but we 
+        made a demo video to showcase our game, which I embeded below.
+        <br>
+    </p>
+    <video width="55%" controls style="padding-bottom: 0.5em">
+        <source src="pics/maddawg.mp4">
+    </video>
+    <p style="text-align:center;">
+        Below I have attached some of the backgrounds that I worked on.
+        All of the text was placed through code, so these are the backgrounds I designed before that.
+        <br>
+    </p>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="w3-content w3-display-container" style="padding-bottom: 0.5em">
+                <img class="mySlides" src="pics/towerdefense/startscreen.png" alt="start screen" style="width: 55em;">
+                <img class="mySlides" src="pics/towerdefense/endscreen.png" alt="end screen" style="width: 55em;">
+                <img class="mySlides" src="pics/towerdefense/endscreen2.png" alt="end screen 2" style="width: 55em;">
+                <img class="mySlides" src="pics/towerdefense/catscreen.png" alt="cat screen" style="width: 55em;">
+                <img class="mySlides" src="pics/towerdefense/ratscreen.png" alt="rat screen" style="width: 55em;">
+            </div>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="slideshow.js"></script>
+</div>
+</body>

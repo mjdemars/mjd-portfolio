@@ -22,117 +22,33 @@
 <body class="body-projects">
 
     <div class="topnav">
-        <a href="personal.html">Art</a>
-        <a href="professional.html">Professional</a>
         <a style="font-family:Satisfy" style="color:white" href="index.html">Maddalen DeMars</a>
-        <a class="active" href="#homes">Projects</a>
+        <a href="personal.html">Resume</a>
+        <div class="dropdown">
+            <a class="active" href="#home">Projects</a>
+            <div class="dropdown-content">
+              <a href="infinityward.html">Modern Warfare II</a>
+              <a href="mgba.html">Foxtrot</a>
+              <a href="technique.html">Technique</a>
+              <a href="towerdefense.html">The Cat's Revenge</a>
+              <a href="platformer.html">A Dash of Thyme</a>
+            </div>
+          </div> 
         <a href="index.html#aboutme">About Me</a>
     </div>
 
     <div id="content" style="background-color: white;">
-        <h1 class="typewriter_header" style="color: rgb(0, 0, 0);">Projects</h1>
+        <h1 class="typewriter_header" style="color: rgb(0, 0, 0); padding-bottom: 1em;">Projects</h1>
 
-        <div class="row">
-            <div class="column">
-                <h2>GBA Game</h2>
-                <p>
-                    For my class Media Devices and Architecture, our final project was to build a 
-                    GBA game from start to finish. All assets in my game (including: backgrounds, sprites, music,
-                    sounds, etc.) were made by myself. The game itself was coded in C and emulated through mGBA.
-                    In my game, you are tasked with helping a nine-tailed fox to get its fox bead back. You 
-                    battle evil spirits in battle and have to defeat 3 in order to get to the final boss battle. 
-                    You also have the chance to stock up on heals to be used in battle by doing minigames 
-                    scattered through the map. A short play through of my game is linked below.
-                </p>
-                <video width="75%" height="350px" controls>
-                    <source src="pics/Fox Trot.mp4">
-                </video>
-            </div>
-
-            <div class="column">
-                <h2>Horizons: Makeathon</h2>
-                <p>
-                    For this art-focused hackathon, my teammate and I decided to take advantage of the art 
-                    aspect of it and combine it with our interests in fashion and sustainability. For our 
-                    project, we decided to thrift-flip three items of clothing and build a Figma mockup 
-                    of our app idea: <b>Sew True</b>. We ended up winning the sustainability category of the 
-                    competition and ended up with a project we truly love.
-                </p>
-                <a href="https://devpost.com/software/sew-true" style="text-align:center">Devpost Submission</a>
-                <img src="pics/sewtrue.png" style="padding-top: 1em; height: 400px" alt="sewtrue">
+        <div class="grid-container">
+            <div class="basic">
+                <a href="infinityward.html"><img class="zoom" src="pics/mw2.jpeg" alt="Modern Warfare 2 Ghost" style="width:33em; height:33em;"></a>
+                <a href="mgba.html"><img class="zoom" src="pics/foxtrot.png" alt="MGBA Game: Foxtrot" style="width:33em; height:33em;"></a>
+                <a href="technique.html"><img class="zoom" src="pics/technique.png" alt="Technique: College Newspaper" style="width:33em; height:33em;"></a>
+                <a href="towerdefense.html"><img class="zoom" src="pics/towerdefense.png" alt="Tower Defense: The Cat's Revenge" style="width:33em; height:33em;"></a>
+                <a href="platformer.html"><img class="zoom" src="pics/platformer.png" alt="Javascript Game: A Dash of Thyme" style="width:33em; height:33em;"></a>
             </div>
         </div>
-
-
-        <div class="row">
-            <div class="column">
-                <h2>Tower Defense Game</h2>
-                <p>
-                    For my class Objects and Design, we were tasked with building a tower defense game 
-                    from scratch in teams of 4-5 throughout the whole semester. For this project, I was given 
-                    the roles: designer and project manager. I still implemented code on the front-end side 
-                    to make our game more visually appealing and engaging. Unfortunately, I am unable to share 
-                    our game code since it is stored in a private repository, but we made a demo video to 
-                    showcase our game, which I embeded below.
-                </p>
-                <video width="75%" height="350px" controls>
-                    <source src="pics/maddawg.mp4">
-                </video>
-            </div>
-            
-            <div class="column">
-                <h2>Platform Game</h2>
-                <p>
-                    For one of my computational media classes, our final project was to prototype and build a 
-                    game from scratch. Working with a team of four, I was given the roles of programmer and 
-                    designer. We built a platform game inspired by Nintendo Mario games, and based our game 
-                    on the theme of cooking. Our game was build using HTML, CSS, and JavaScript.
-                    I've linked our game below if you'd like to give it a play.
-                </p>
-                <a href="https://vkbathala.github.io/A_Dash_of_Thyme/" style="text-align:center">Our game link</a>
-                <img src="pics/platformer.png" style="padding-top: 1em; height: 400px">
-            </div>
-        </div>
-
-
-        <div class="row" style="padding-top: 1.5em; padding-bottom: 4em;">
-            <div class="column">
-                <h2>HackGT Fall 2021</h2>
-                <p>
-                    For our school's hackathon, my team decided to prototype a web app that would help local 
-                    and small business manage their loyalty systems. Our product <b>Valu</b> was focused on the 
-                    gamification and creating a social aspect for business loyalty programs. I worked as the 
-                    team front-end designer and conceptual builder, using: HTML, CSS, JavaScript, and Figma 
-                    to do my work.
-                </p>
-                <a href="https://mjdemars.github.io/electric-boogaloo/" style="text-align:center">Our client facing UI</a>
-                <br><a href="https://mjdemars.github.io/electric-boogaloo2/" style="text-align:center">Our customer facing UI</a>
-                <div class="w3-content w3-display-container" style="padding-bottom: 1em; padding-left: 3em; padding-right: 3em;">
-                    <img class="mySlides2" src="pics/valu.png" alt="valu">                
-                    <img class="mySlides2" src="pics/valu2.png" alt="valu2">
-                    <img class="mySlides2" src="pics/valu3.png" alt="valu3">                 
-                </div>
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                    <span class="dot2" onclick="currentSlide2(1)"></span>
-                    <span class="dot2" onclick="currentSlide2(2)"></span>
-                    <span class="dot2" onclick="currentSlide2(3)"></span>
-                </div>
-                <script src="slideshow2.js"></script>
-            </div>
-
-            <div class="column">
-                <h2>Rebranding Project</h2>
-                <p>
-                    In the Spring semester of my freshman year, my final project for my visual design class was rebranding 
-                    a local business. I chose to rebrand one of my favorite local coffee shops: Momo Cafe. The deliverables 
-                    for this project included a brand prism, brand identity (color scheme, fonts, etc), a template for a webpage, 
-                    and flyers for a promotional event for the business.
-                </p>
-                <embed src="pics/DEMARS_008_Final_ALL.pdf" type="application/pdf" width="80%" height="600px">
-            </div>
-        </div>    
-    </div>
 
 </body>
 </html>
