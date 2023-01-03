@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Foxtrot</title>
+
+    <link rel="stylesheet" href="../mainstyle.css">
+    <link rel="stylesheet" href="../slideshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        table, td {border: 2px solid #ffffff; font-size: 1.1em;}
+        img {object-fit: scale-down; display: block; width: 50em}
+        p {padding-left: 4.5em; padding-right: 4.5em; line-height: 25px; text-align: left;}
+    </style>
+</head>
+
+<body>
+<div class="topnav">
+    <a style="font-family:Satisfy" style="color:white" href="../index.html">Maddalen DeMars</a>
+    <a href="../resume.html">Resume</a>
+    <div class="dropdown">
+        <a href="../projects.html">Projects</a>
+        <div class="dropdown-content">
+            <a href="infinityward.html">Modern Warfare II</a>
+            <a href="oct21.html">October 21st</a>
+            <a href="mgba.html">Foxtrot</a>
+            <a href="technique.html">Technique</a>
+            <a href="towerdefense.html">The Cat's Revenge</a>
+            <a href="platformer.html">A Dash of Thyme</a>
+        </div>
+    </div> 
+    <a href="../index.html#aboutme">About Me</a>
+</div>
+<div id="content" style="background-color: white; padding-bottom: 3em;">
+    <h1 class="typewriter_header" style="color: rgb(0, 0, 0); padding-bottom: 0.5em;">Foxtrot</h1>
+
+    <center><p style="width:80%;">
+        For my class Media Devices and Architecture, our final project was to build a 
+        GBA game from start to finish. All assets in my game (including: backgrounds, sprites, music,
+        sounds, etc.) were made by myself. The game itself was coded in C and emulated through mGBA and includes 
+        features such as parallax scrolling backgrounds, collision maps, etc.
+        In my game, you are tasked with helping a nine-tailed fox to get its fox bead back. You 
+        battle evil spirits in battle and have to defeat 3 in order to get to the final boss battle. 
+        You also have the chance to stock up on heals to be used in battle by doing minigames 
+        scattered through the map. 
+        A short play through of my game is linked below to demonstrate some of the features.
+        <br>
+    </p></center>
+    <video width="70%" controls>
+        <source src="../videos/Fox Trot.mp4">
+    </video>
+    <center><p style="width:80%;">
+        <br>
+        Through this project, I deepened my knowledge of what it takes to make a game from start to finish. 
+        Of course, my game is on the small scale since it was independently made within the span of a month, but 
+        I was able to improve my skills as a programmer, planner, and artist. One of my personal favorite things about 
+        playing games is the sound design, so I had the utmost fun composing and recording all the music/sound effects for 
+        my game as well. Below you can find some of the image assets I created, such as the spritesheet and a few backgrounds.
+        <br>
+        <br>
+    </p></center>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="w3-content w3-display-container" style="padding-bottom: 0.5em">
+                <img class="mySlides" src="../pics/spritesheet.png" alt="spritesheet">
+                <img class="mySlides" src="../pics/bigbackground.png" alt="big background">
+                <img class="mySlides" src="../pics/battlescreen.png" alt="battle screen">
+            </div>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../slideshow.js"></script>
+</div>
+</body>
