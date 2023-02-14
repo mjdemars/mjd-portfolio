@@ -211,6 +211,8 @@ html, body {
 }
 
 body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
   background: linear-gradient(-45deg, #8f7fa5, #b9abca, #e6c6b8, #9f6d58);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
