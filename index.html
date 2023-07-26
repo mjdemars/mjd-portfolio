@@ -7,8 +7,8 @@
     <title>Main Page</title>
 
     <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="sidenav.css">
     <link rel="stylesheet" href="blobbuttons.css">
-    <link rel="stylesheet" href="wave.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
@@ -18,111 +18,80 @@
     <script src="gotoBottom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <style>
-      .topnav a:hover {background-color: white;}
-    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>
-  <div class="content2">
-    <div class="typewriter">
-      <h1 class="h1" style="color:rgb(255, 255, 255); text-shadow: 0.05em 0.05em #000000; padding-left: 0.25em; padding-bottom: -1;">Maddalen DeMars</h1>
+  <div id="nav-placeholder"></div>
+
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("sidenav.html");
+    });
+  </script>
+
+  <div class="main">
+
+    <div class="grid-container">
+      <div class="basic">
+          <a href="infinityward.html"><img class="zoom" src="pics/mw2.jpeg" alt="Modern Warfare 2 Ghost" style="width:33em; height:33em;"></a>
+          <a href="oct21.html"><img class="zoom" src="pics/oct21.png" alt="Unity Game: October 21st" style="width:33em; height:33em;"></a>
+          <a href="mgba.html"><img class="zoom" src="pics/foxtrot.png" alt="MGBA Game: Foxtrot" style="width:33em; height:33em;"></a>
+          <a href="technique.html"><img class="zoom" src="pics/technique.png" alt="Technique: College Newspaper" style="width:33em; height:33em;"></a>
+      </div>
     </div>
 
-    <!-- <h2 style="font-size: 1.2em; padding-right: 1em">UI/UX Designer</h2> -->
-
-    <div class="buttons">
-      <a href="resume.html"><button class="blob-btn">
-        Resume
-        <span class="blob-btn__inner">
-          <span class="blob-btn__blobs">
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-          </span>
-        </span>
-      </button></a>
-  
-      <a href="projects.html"><button class="blob-btn">
-        Projects
-        <span class="blob-btn__inner">
-          <span class="blob-btn__blobs">
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-          </span>
-        </span>
-      </button></a>
-
-      <a href="#aboutme"><button class="blob-btn">
-        About Me
-        <span class="blob-btn__inner">
-          <span class="blob-btn__blobs">
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-          </span>
-        </span>
-      </button></a>
-
+    <div id="aboutme">
+      <p style="color:rgb(255, 255, 255)">spacer</p>
+      <p style="color:rgb(255, 255, 255)">spacer</p>
+      <p style="color:rgb(255, 255, 255)">spacer</p>
+      <div class="grid-container">
+        <div class="basic">
+          <img src="pics/portrait.jpg" alt="Portrait" style="width: 20em; height: 20em; border-radius: 50%; padding: 3em">
+        </div>
+        <div class="basic">
+          <p style="line-height: 2em; padding-left: 3em; padding-right: 4em; padding-top: 5em; text-align: left; font-size: 1em;">
+            I am currently a student at Georgia Institute of Technology pursuing my undergraduate 
+            degree in <b>Computational Media</b> with concentrations in People and Interaction Design. 
+            Computational Media is a Tech-specific major, which is best described as Computer Science 
+            with a heavy focus on design. I plan to pursue UI/UX design in the 
+            future with my major. Through the different projects I've been on and the work experience 
+            that I've had, I've developed a strong passion for computer design and how to make technology 
+            more user friendly.
+            <br>
+          </p>
+        </div>
+      </div>
     </div>
-</body>
-
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-          <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-        </filter>
-      </defs>
-    </svg>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
   </div>
 
-  <section>
+</body>
+
+<!-- blob button css animation -->
+<div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+      </filter>
+    </defs>
+  </svg>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+
+  <!-- <section>
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
     <div class="wave wave3"></div>
     <div class="wave wave4"></div>
-  </section>
-
-  <div id="aboutme" style="background-color: white;">
-    <p style="color:rgb(255, 255, 255)">spacer</p>
-    <p style="color:rgb(255, 255, 255)">spacer</p>
-    <p style="color:rgb(255, 255, 255)">spacer</p>
-    <div class="grid-container">
-      <div class="basic">
-        <img src="pics/portrait.jpg" alt="Portrait" style="width: 20em; height: 20em; border-radius: 50%; padding-top: 3em; padding-bottom: 3em; padding-left: 3em; padding-right: 3em;">
-      </div>
-      <div class="basic">
-        <p style="line-height: 2em; padding-left: 3em; padding-right: 4em; padding-top: 5em; text-align: left; font-size: 1em;">
-          I am currently a student at Georgia Institute of Technology pursuing my undergraduate 
-          degree in <b>Computational Media</b> with concentrations in People and Interaction Design. 
-          Computational Media is a Tech-specific major, which is best described as Computer Science 
-          with a heavy focus on design. I plan to pursue UI/UX design in the 
-          future with my major. Through the different projects I've been on and the work experience 
-          that I've had, I've developed a strong passion for computer design and how to make technology 
-          more user friendly.
-          <br>
-          <b><a href="https://www.linkedin.com/in/maddalen-demars-35645692/">LinkedIn</a></b>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="topnav" style="padding-bottom: 0">
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a href="#content">About Me</a>
-  </div>
+  </section> -->
 
 </html>
