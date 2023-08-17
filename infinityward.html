@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="blobbuttons.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="slideshow2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
@@ -16,6 +18,7 @@
 
     <style>
         table, td {border: 2px solid #ffffff; font-size: 1.1em;}
+        img {object-fit: scale-down; display: block; margin-left: auto; margin-right: auto; width: 70%}
         img:hover {opacity: 0.75;}
         p {padding-left: 4.5em; padding-right: 4.5em; line-height: 25px; text-align: left;}
     </style>
@@ -38,7 +41,7 @@
                 During the summers of 2022 and 2023, I got the opportunity to intern with the UI/UX team at Infinity Ward 
                 and help implement designs for Modern Warfare 2 (2022). I worked on miscellaneous bugs 
                 and eventually was able to own my own features through the game. To complete my tasks, I worked in Visual Studio Code 
-                coding in <b>Lua</b> and in the studio's proprietary <b>UI editor</b>. I got to see various UI principles in play with my 
+                coding in <b>Lua</b> and in a <b>UI editor</b>. I got to see various UI principles in play with my 
                 variety of tasks. Due to the nature of the work, I was also able to talk to and collaborate with people from 
                 all over the company.
                 <br>
@@ -46,14 +49,44 @@
                 Prior to joining the UI/UX team at Infinity Ward, I had never had the chance to work with a team of designers, 
                 artists, and engineers on such a large project, and I am beyond grateful for all of the guidance I received. 
                 Through this project, I was able to grow as both a programmer and a designer through my tasks and the things 
-                I learned from everybody on the team.
-                <br>
-                <br>
-                The image below will take you to the game's official website.
+                I learned from everybody on the team. Below I have included a few frontend features that I helped to work on 
+                or owned during my time at IW.
                 <br>
                 <br>
             </p></center>
-            <a href="https://www.callofduty.com/modernwarfare2"><img src="pics/mw2.jpeg" alt="Modern Warfare 2 Ghost" style="width:40%; padding-bottom: 2em;"></a>
+
+            <center><p style="width:80%; text-align: center;">Seasonal Onboarding Popups</p></center>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="w3-content w3-display-container" style="padding-bottom: 0.5em">
+                        <img class="mySlides" src="pics/mw2/dmz_s4_onboarding.PNG" alt="spritesheet">
+                        <img class="mySlides" src="pics/mw2/dmz_s5_onboarding.PNG" alt="big background">
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+            <script src="slideshow.js"></script>
+
+            <center><p style="width:80%; text-align: center;">Daily Challenges Widget and Filtered Playlist Gamemodes Count</p></center>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="w3-content w3-display-container" style="padding-bottom: 0.5em">
+                        <img class="mySlides2" src="pics/mw2/mp_lobby_daily_challenges.png" alt="spritesheet">
+                        <img class="mySlides2" src="pics/mw2/mp_filter_select.png" alt="big background">
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                    </div>
+                </div>
+            </div>
+            <script src="slideshow2.js"></script>
+
+            <center><p style="width:80%; text-align: center;">The image below will take you to the game's official website.</p>
+            <a href="https://www.callofduty.com/modernwarfare2"><img src="pics/mw2.jpeg" alt="Modern Warfare 2 Ghost" style="width:40%; padding-bottom: 2em;"></a></center>
 
         </div>
     </div>
