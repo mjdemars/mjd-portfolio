@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The RedLine</title>
+
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="blobbuttons.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        img {display: block; margin-left: auto; margin-right: auto;}
+        p {padding-left: 4.5em; padding-right: 4.5em; line-height: 25px; text-align: left;}
+    </style>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("sidenav.html");
+      });
+    </script>
+
+    <div class="main">
+        <div id="content" style="background-color: white; padding-bottom: 3em;">
+            <h1 class="typewriter_header" style="color: rgb(0, 0, 0); padding-bottom: 0.5em;">The Redline</h1>
+
+            <center><p style="width:80%;">
+                Over the course of a year, I led a small team of computer science students to create a product 
+                for an outside client for our Junior Capstone. We worked with John Pecak to create "The RedLine", a mobile application for 
+                both Android and iOS that allows car enthusiast to get connected with their communities and RSVP to car show events 
+                and meetups. I was the project lead for my team and worked as a manager, designer, and programmer while also 
+                maintaining client communications. Our application supports two users (host or attendees), which is selected when 
+                users sign up for an account with our app.
+                <br>
+                <br>
+                Our team used <b>React Native</b> and Firebase's <b>Firestore</b> to build our application. 
+                We used <b>Expo Go</b> to simulate our application and demo the app for our client and class. 
+                I mainly focused on the frontend implementation and interactive design thinking for our team in terms of programming. 
+                I've linked a slideshow below that highlights the main features of our application. These 
+                features include: an interactive Google API map, a filtering feature, event creation, and event editing.
+                <br>
+                <br>
+            </p></center>
+            <object
+                data= "pics/Expo Presentation Slideshow.pdf" 
+                width="70%"
+                height="600">
+            </object>
+            <br>
+            <br>
+
+            <center><p style="width:80%;">
+                During the first 6 months of this project, we focused preparing the design documentation and improving our 
+                technical writing skills. This included creating our vision statement, client charter, user research, user stories, and etc. 
+                After finishing our technical documents, we created our initial prototype using <b>Figma</b>, which our client gave feedback 
+                and approval to.
+                <br>
+                <br>
+                During the second semester of our project, we implemented our Figma designs for the mobile app. We worked in close 
+                relations with our client and met with him on a bi-weekly basis to demonstrate our progress and also receive feedback 
+                on the features being implemented. Below is our team's final demo video, which walks through our Sprint 4 user stories and features 
+                that we implemented in the 2-week period for our sprint.
+                <br>
+                <br>
+            </p></center>
+            <iframe width="70%" height="600"
+                src="https://www.youtube.com/embed/OeJkzl1tG3c" 
+                title="The RedLine Final Sprint Demo Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+            <!--insert video demo and final slideshow-->
+            <br><br>
+            
+            <center><p style="width:80%;">
+                At the end of this year-long project, we demoed our application for a panel of judges in our Junior Design Capstone Expo. 
+                Out of over 50 teams demoing, we placed top 3 for best expo presentation for showcasing our product. A picture of our team and the collateral we 
+                made for our in-person presentation can be seen below. More about our expo can be read in this article: 
+                <a href="https://www.cc.gatech.edu/news/team-earns-top-cs-capstone-honor-medical-app">Team Earns Top CS Capstone Honor for Medical App</a>
+                <br>
+                <br>
+            </p></center>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="w3-content w3-display-container" style="padding-bottom: 0.5em">
+                        <img class="mySlides" src="pics/TheRedlineTeam.jpg" alt="Expo team photo"  style="width: 70%;">
+                        <img class="mySlides" src="pics/redline-collateral-front.png" alt="redline collateral front" style="width: 60%; border: solid">
+                        <img class="mySlides" src="pics/redline-collateral-back.png" alt="redline collateral back" style="width: 60%; border: solid">
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+            <script src="slideshow.js"></script>
+        </div>
+    </div>
+</body>
